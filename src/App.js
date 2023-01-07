@@ -67,12 +67,12 @@ function App() {
       })
    },[]) ;
 
-   const [clicked, setActive] = useState('');
+   const [clicked, setClicked] = useState('');
    
    const play = (x,y) => {
       const audio = document.getElementById(x);
       audio.play()
-      setActive(y)
+      setClicked(y)
    }
 
 
